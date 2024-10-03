@@ -31,6 +31,6 @@ if( length > 10 && length < 25 ){
 return "la longueur de mot de pass doit etre entre 12 et 25";
 }
 
-const password = generetMotDePass(17, true, true, true);
+const password = generetMotDePass(30, true, true, true);
 console.log(password);
  
