@@ -1,4 +1,4 @@
-function generetMotDePass(length: number ,includeNumbers: boolean, includeSymbols: boolean, includeUppercase: boolean): string
+function generatePassword (length: number ,includeNumbers: boolean, includeSymbols: boolean, includeUppercase: boolean): string
 {
 
 if( length > 10 && length < 25 ){
@@ -31,6 +31,6 @@ if( length > 10 && length < 25 ){
 return "la longueur de mot de pass doit etre entre 12 et 25";
 }
 
-const password = generetMotDePass(30, true, true, true);
+const password = generatePassword (30, true, true, true);
 console.log(password);
  
