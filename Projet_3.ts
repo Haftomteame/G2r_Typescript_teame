@@ -49,14 +49,14 @@ type  Clients = {
   
    const file = new waitingList();
    
-   if (window.confirm('veut-tu ajouter une client')){
+   if (window.confirm('veut-tu ajouter un client')){
    file.addClient("Haftom", false);           
    }
-   if (window.confirm('veut-tu ajouter une client')){
-    file.addClient("Romin", true);              
+   if (window.confirm('veut-tu ajouter un client')){
+    file.addClient("Romain", true);              
    }
-   if (window.confirm('veut-tu ajouter une client')){
-    file.addClient("Zeyneb", false);       
+   if (window.confirm('veut-tu ajouter un client')){
+    file.addClient("Zenaba", false);       
    }  
    
    if (window.confirm("voulez-vous Affiche l'état actuel du dossier")){
