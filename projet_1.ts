@@ -31,7 +31,7 @@ if( length > 10 && length < 25 ){
 
       return password;
 }
-return "la longueur de mot de pass doit etre entre 12 et 25";
+console.error( "la longueur de mot de pass doit etre entre 12 et 25");
 }
 const lenPass = parseInt(prompt("Entrez la longueur du mot de passe") || '12');
 
