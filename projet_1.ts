@@ -1,7 +1,5 @@
 function generetMotDePass(length: number ,includeNumbers: boolean, includeSymbols: boolean, includeUppercase: boolean): string
 {
-
-if( length > 10 && length < 25 ){
     const lowercase = 'abcdefghijklmnopqrstuvwxyz';
     const numbers = '0123456789';
     const symbols = '@#$%^&*()_+~';  
@@ -31,10 +29,16 @@ if( length > 10 && length < 25 ){
 
       return password;
 }
-console.error( "la longueur de mot de pass doit etre entre 12 et 25");
-}
-const lenPass = parseInt(prompt("Entrez la longueur du mot de passe") || '12');
 
+const lenPass = parseInt(prompt("Entrez la longueur du mot de passe") || '12');
+if( lenPass > 10 && lenPass < 25 ){
 const password = generetMotDePass(lenPass, true, true, true);
 console.log(password);
+}else{
+console.error( "la longueur de mot de pass doit etre entre 12 et 25") ;
+}
+
+
+
+
  
