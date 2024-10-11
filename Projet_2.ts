@@ -1,7 +1,6 @@
 function textAnalizer(text: string): void
 {
     
-    // 1. Compter le nombre de mots
     const mots = text.match(/\b\w+\b/g);
     const nbMots = mots ? mots.length : 0;
 
